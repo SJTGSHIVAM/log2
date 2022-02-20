@@ -1,0 +1,7 @@
+/* *************************   This file contains minor fixes that are needed in the library and some overriding css that will help us make custom ui ******************* */
+
+sub {
+  font-size: 1ex;
+  vertical-align: sub;
+}
+/*=====  End of  fixes  ======*/

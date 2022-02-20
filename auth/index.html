@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="http://127.0.0.1:5500/min/index.css" />
+    <link rel="stylesheet" href="/root.css" />
+    <script src="/theme.js" type="module" defer></script>
+    <script src="./index.js" type="module" defer></script>
+    <title>Log2</title>
+  </head>
+  <body>
+    <header class="lg2__header">
+      <nav class="tui__nav--box tui__pd-in-xl tui__pd-tb-md">
+        <h1 class="tui__nav--logo tui__h-3"><a href="/">Log<sub>2</sub></a></h1>
+        <div class="tui__nav--mid tui__m-tb-xs">
+          <span>
+            <label for="search" class="tui__dis--none">Search</label>
+            <input type="text" placeholder="Search" class="tui__input--val" id="search">
+          </span>
+        </div>
+        <ul class="tui__nav--list">
+          <li>
+            <a href="/profile">  
+            <div class="tui__avatar-br-lg tui__flex--center tui__avatar-md tui__m-in-xs">
+              <img
+                class="tui__img-hw100"
+                src="/assets/pngs/buyer.png"
+                alt="user icon"
+              />
+            </div>
+            </a>
+          </li>
+          <li>
+            <button class="tui__btn--link-br-none tui__m-in-xs">
+              <a href="/auth">Log out</a>
+            </button>
+          </li>
+          <li>
+            <div class="tui__avatar-br-lg tui__flex--center tui__avatar-md tui__m-in-xs">
+              <img
+                class="tui__theme--switch tui__col--svg tui__img-hw100"
+                src="/assets/svgs/moon.svg"
+              />
+            </div>
+          </li>
+          <li>
+            <a href="/wishlist">  
+            <div class="tui__avatar-br-lg tui__flex--center tui__avatar-md tui__m-in-xs">
+              <img
+                class="tui__theme--switch tui__col--svg tui__img-hw100"
+                src="/assets/svgs/hollowheart.svg"
+              />
+            </div>
+            </a>
+          </li>
+          <li>
+            <a href="/cart">      
+              <div class="tui__avatar-br-lg tui__flex--center tui__avatar-md tui__m-in-xs">
+               <img
+                class="tui__theme--switch tui__col--svg tui__img-hw100"
+                src="/assets/svgs/cart.svg"
+               />
+            </div>
+          </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="lg2__main">
+      <aside class="lg2__aside--right tui__m-xl">
+        <div
+          class="tui__card tui__pos--rel tui_card--shadow tui__pd-xs lg2__card--login"
+        >
+          <div class="tui__card--img"></div>
+          <div class="tui__card--header tui__pd-xs">
+            <h4 class="tui__h-4">Login</h4>
+          </div>
+          <div class="tui__card--body tui__pd-xs">
+            <form>
+              <span class="tui__input--box">
+              <label for="display">Username:</label>
+              <input
+                type="text"
+                placeholder="enter username"
+                
+                class="tui__input--val"
+                id="display"
+              />
+            </span>
+            <span class="tui__input--box">
+              <label for="display">Password:</label>
+              <input
+                type="password"
+                placeholder="enter password"
+                
+                class="tui__input--val"
+                id="display"
+              />
+            </span>
+            <button class="tui__btn--primary-br-none" type="submit">Login</button>
+            
+          </div>
+        </form>
+        <div class="tui__card--footer tui__flex--row-space-around tui__m-xl">
+            <button class="tui__btn--link-br-none lg2__btn--forgot">
+              Forgot Password ?
+            </button>
+            <button class="tui__btn--link-br-none lg2__btn--reg">Register</button>
+          </div>
+        </div>
+  
+        <div
+          class="tui__card tui__pos--rel tui_card--shadow tui__dis--none tui__pd-xs lg2__card--reg"
+        >
+          <div class="tui__card--img"></div>
+          <div class="tui__card--header tui__pd-xs">
+            <h4 class="tui__h-4">Sign up</h4>
+          </div>
+          <div class="tui__card--body tui__pd-xs tui__flex--col">
+        <form>
+          <span class="tui__input--box">
+            <label for="display">First Name:</label>
+            <input
+              type="text"
+              placeholder="enter First name"
+              
+              class="tui__input--val"
+              id="display"
+            />
+          </span>
+          <span class="tui__input--box">
+            <label for="display">Last Name:</label>
+            <input
+              type="text"
+              placeholder="enter Last name"
+              
+              class="tui__input--val"
+              id="display"
+            />
+          </span>
+          <span class="tui__input--box">
+              <label for="display">Username:</label>
+              <input
+                type="text"
+                placeholder="enter username"
+                
+                class="tui__input--val"
+                id="display"
+              />
+            </span>
+            <span class="tui__input--box">
+              <label for="display">email:</label>
+              <input
+                type="email"
+                placeholder="enter email"
+                
+                class="tui__input--val"
+                id="display"
+              />
+              <span class="tui__input--box">
+                <label for="display">DOB:</label>
+                <input
+                  type="date"
+                  class="tui__input--val"
+                  id="display"
+                />
+              </span>
+            </span>
+            <span class="tui__input--box">
+              <label for="display">Password:</label>
+              <input
+                type="password"
+                placeholder="enter password"
+                
+                class="tui__input--val "
+                id="display"
+              />
+            </span>
+            <span class="tui__input--box">
+              <label for="display">Confirm Password:</label>
+              <input
+                type="password"
+                placeholder="enter password"
+                
+                class="tui__input--val"
+                id="display"
+              />
+            </span>
+            <button
+              class="tui__btn--primary-br-none tui__width--max-content tui__m-t-md tui__m-l-xs"
+              type="submit"
+            >
+              Sign up
+            </button>
+        </form>
+      </div>
+          <div class="tui__card--footer tui__flex--center tui__m-xl">
+            <button class="tui__btn--link-br-none lg2__btn--login">Login</button>
+          </div>
+        </div>
+  
+        <div
+          class="tui__card tui__pos--rel tui_card--shadow tui__dis--none tui__pd-xs lg2__card--forgot"
+        >
+          <div class="tui__card--img"></div>
+          <div class="tui__card--header tui__pd-xs">
+            <h4 class="tui__h-4">Forgot Password</h4>
+          </div>
+          <div class="tui__card--body tui__pd-xs">
+        <form>
+          <span class="tui__input--box">
+              <label for="display">Username:</label>
+              <input
+                type="text"
+                placeholder="enter username"
+                
+                class="tui__input--val"
+                id="display"
+              />
+            </span>
+  
+            <button class="tui__btn--primary-br-none" type="submit">Reset</button>
+        </form>
+      </div>
+          <div class="tui__card--footer tui__m-xl tui__flex--row-space-around">
+            <button class="tui__btn--link-br-none lg2__btn--login">Login</button>
+            <button class="tui__btn--link-br-none lg2__btn--reg">Register</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer class="lg2__footer"></footer>
+  </body>
+</html>
