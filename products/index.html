@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="http://127.0.0.1:5500/min/index.css" />
+    <link rel="stylesheet" href="https://thisui.netlify.app/min/index.css" />
     <link rel="stylesheet" href="/root.css" />
     <link rel="stylesheet" href="/override.css" />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <script src="/theme.js" type="module" defer></script>
     <title>Log2</title>
   </head>
@@ -84,9 +84,231 @@
         </ul>
       </nav>
     </header>
+    <aside class="lg2__aside--left tui__flex--column">
+      <ul class="lg2__aside--left-li tui__pd-md">
+        <li
+          class="lg2__aside--head tui__flex--row-space-between tui__width--strech"
+        >
+          <h4 class="tui__h-4">Filter</h4>
+          <p class="tui__text-sm">Clear</p>
+        </li>
+
+        <li>
+          <h4 class="tui__h-4">Price</h4>
+          <div class="tui__flex--row-space-between">
+            <span class="tui__slider--box">
+              <label for="price">Around:</label
+              ><span class="tui__text-sm"> 100 </span>
+              <input
+                type="range"
+                class="tui__slider tui__slider--pri-col tui__slider--xxxs"
+                name="price"
+              />
+            </span>
+          </div>
+        </li>
+
+        <li>
+          <h4 class="tui__h-4">Category</h4>
+          <div class="tui__flex--col">
+            <span
+              ><input type="checkbox" name="DBMS" /><label for="DBMS">
+                DBMS</label
+              ></span
+            >
+            <span
+              ><input type="checkbox" name="DSA" /><label for="DSA">
+                DSA
+              </label></span
+            >
+            <span
+              ><input type="checkbox" name="OS" /><label for="OS">
+                OS</label
+              ></span
+            >
+          </div>
+        </li>
+
+        <li>
+          <h4 class="tui__h-4">Rating</h4>
+          <div class="lg2__rating">
+            <fieldset class="tui__rating lg2__rating--size">
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5" class="full" title="Awesome"></label>
+              <input type="radio" id="star4.5" name="rating" value="4.5" />
+              <label for="star4.5" class="half"></label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" class="full"></label>
+              <input type="radio" id="star4.5" name="rating" value="4.5" />
+              <label for="star4.5" class="half"></label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" class="full"></label>
+              <input type="radio" id="star2.5" name="rating" value="2.5" />
+              <label for="star2.5" class="half"></label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2" class="full"></label>
+              <input type="radio" id="star1.5" name="rating" value="1.5" />
+              <label for="star1.5" class="half"></label>
+              <input type="radio" id="star1" name="rating" value="1" />
+              <label for="star1" class="full"></label>
+              <input type="radio" id="star0.5" name="rating" value="0.5" />
+              <label for="star0.5" class="half"></label>
+            </fieldset>
+          </div>
+        </li>
+
+        <li>
+          <h4 class="tui__h-4">Sort</h4>
+          <div class="tui__flex--col">
+            <span
+              ><input type="radio" name="price" /><label for="DBMS">
+                Price: low to high</label
+              ></span
+            >
+            <span
+              ><input type="radio" name="price" /><label for="DSA">
+                Price: high to low
+              </label></span
+            >
+          </div>
+        </li>
+      </ul>
+    </aside>
     <main class="lg2__main tui__m-xl">
-      <h1 class="tui__h-1"></sub></h1>
-      <p class="tui__text-lg">Comming Soon!</p>
+      <div class="lg2__products--grid">
+        <div class="tui__card tui_card--shadow">
+          <div class="tui__card--img">
+            <img
+              class="tui__image--center-cover"
+              src="/assets/jpgs/coremen.jpg"
+              alt="image"
+            />
+          </div>
+          <div class="tui__card--header tui__pd-xs">
+            <h4 class="tui__h-4">Introduction to Algorithms, third edition</h4>
+            <h5 class="tui__h-5">Thomas H. Cormen</h5>
+          </div>
+          <div class="tui__card--body tui__pd-xs">
+            <p class="tui__text-sm tui__b-3">₹ 2000</p>
+          </div>
+          <div class="tui__card--footer">
+            <button class="tui__btn--link-br-none tui__child--strech">
+              Go To Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="tui__card tui_card--shadow">
+          <div class="tui__card--img">
+            <img
+              class="tui__image--center-cover"
+              src="/assets/jpgs/coremen.jpg"
+              alt="image"
+            />
+          </div>
+          <div class="tui__card--header tui__pd-xs">
+            <h4 class="tui__h-4">Introduction to Algorithms, third edition</h4>
+            <h5 class="tui__h-5">Thomas H. Cormen</h5>
+          </div>
+          <div class="tui__card--body tui__pd-xs">
+            <p class="tui__text-sm tui__b-3">₹ 2000</p>
+          </div>
+          <div class="tui__card--footer">
+            <button class="tui__btn--link-br-none tui__child--strech">
+              Go To Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="tui__card tui_card--shadow">
+          <div class="tui__card--img">
+            <img
+              class="tui__image--center-cover"
+              src="/assets/jpgs/coremen.jpg"
+              alt="image"
+            />
+          </div>
+          <div class="tui__card--header tui__pd-xs">
+            <h4 class="tui__h-4">Introduction to Algorithms, third edition</h4>
+            <h5 class="tui__h-5">Thomas H. Cormen</h5>
+          </div>
+          <div class="tui__card--body tui__pd-xs">
+            <p class="tui__text-sm tui__b-3">₹ 2000</p>
+          </div>
+          <div class="tui__card--footer">
+            <button class="tui__btn--link-br-none tui__child--strech">
+              Go To Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="tui__card tui_card--shadow">
+          <div class="tui__card--img">
+            <img
+              class="tui__image--center-cover"
+              src="/assets/jpgs/coremen.jpg"
+              alt="image"
+            />
+          </div>
+
+          <div class="tui__card--header tui__pd-xs">
+            <h4 class="tui__h-4">Introduction to Algorithms, third edition</h4>
+            <h5 class="tui__h-5">Thomas H. Cormen</h5>
+          </div>
+          <div class="tui__card--body tui__pd-xs">
+            <p class="tui__text-sm tui__b-3">₹ 2000</p>
+          </div>
+          <div class="tui__card--footer">
+            <button class="tui__btn--link-br-none tui__child--strech">
+              Go To Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="tui__card tui_card--shadow">
+          <div class="tui__card--img">
+            <img
+              class="tui__image--center-cover"
+              src="/assets/jpgs/coremen.jpg"
+              alt="image"
+            />
+          </div>
+          <div class="tui__card--header tui__pd-xs">
+            <h4 class="tui__h-4">Introduction to Algorithms, third edition</h4>
+            <h5 class="tui__h-5">Thomas H. Cormen</h5>
+          </div>
+          <div class="tui__card--body tui__pd-xs">
+            <p class="tui__text-sm tui__b-3">₹ 2000</p>
+          </div>
+          <div class="tui__card--footer">
+            <button class="tui__btn--link-br-none tui__child--strech">
+              Go To Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="tui__card tui_card--shadow">
+          <div class="tui__card--img">
+            <img
+              class="tui__image--center-cover"
+              src="/assets/jpgs/coremen.jpg"
+              alt="image"
+            />
+          </div>
+          <div class="tui__card--header tui__pd-xs">
+            <h4 class="tui__h-4">Introduction to Algorithms, third edition</h4>
+            <h5 class="tui__h-5">Thomas H. Cormen</h5>
+          </div>
+          <div class="tui__card--body tui__pd-xs">
+            <p class="tui__text-sm tui__b-3">₹ 2000</p>
+          </div>
+          <div class="tui__card--footer">
+            <button class="tui__btn--link-br-none tui__child--strech">
+              Go To Cart
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="lg2__footer"></footer>
