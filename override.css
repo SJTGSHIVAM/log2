@@ -4,4 +4,8 @@ sub {
   font-size: 1ex;
   vertical-align: sub;
 }
+
+.tui__slider {
+  width: 90%;
+}
 /*=====  End of  fixes  ======*/
