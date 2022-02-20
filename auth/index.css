@@ -1,0 +1,36 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "con con con con con con con con con con con con"
+    "foot foot foot foot foot foot foot foot foot foot foot foot";
+  grid-template-rows: minmax(10vh, max-content) 1fr minmax(10vh, max-content);
+}
+.lg2__header {
+  grid-area: nav;
+}
+.lg2__main {
+  grid-area: con;
+  align-self: center;
+  overflow: hidden;
+}
+.lg2__footer {
+  grid-area: foot;
+}
+
+.lg2__card--reg,
+.lg2__card--forgot,
+.lg2__card--login {
+  width: 20rem;
+  margin: auto;
+}
+.lg2__ol--gap * {
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .lg2__card--reg,
+  .lg2__card--forgot,
+  .lg2__card--login {
+    width: 40rem;
+  }
+}
