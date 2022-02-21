@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/override.css" />
     <link rel="stylesheet" href="/index.css" />
     <script src="/theme.js" type="module" defer></script>
+    <script src="/carousel.js" type="module" defer></script>
     <title>Log2</title>
   </head>
   <body>
@@ -90,12 +91,148 @@
       </nav>
     </header>
     <main class="lg2__main tui__m-xl">
+      <div class="lg2__carousel--wrapper">
+        <section class="tui__carousel">
+          <div class="tui__carousel--slides">
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+
+            <div class="tui__carousel--slide tui__first">
+              <img
+                src="/assets/webps/books1.webp"
+                alt="books"
+                class="tui__img-hw100"
+              />
+            </div>
+
+            <div class="tui__carousel--slide">
+              <img
+                src="/assets/webps/serverroom.webp"
+                alt="server"
+                class="tui__img-hw100"
+              />
+            </div>
+
+            <div class="tui__carousel--slide">
+              <img
+                src="/assets/webps/book2.avif"
+                alt="books"
+                class="tui__img-hw100"
+              />
+            </div>
+
+            <div class="tui__carousel--slide">
+              <img
+                src="/assets/webps/book3.avif"
+                alt="books"
+                class="tui__img-hw100"
+              />
+            </div>
+
+            <div class="tui__carousel--manual-navigation">
+              <label for="radio1" class="tui__carousel--manual-btn"></label>
+              <label for="radio2" class="tui__carousel--manual-btn"></label>
+              <label for="radio3" class="tui__carousel--manual-btn"></label>
+              <label for="radio4" class="tui__carousel--manual-btn"></label>
+            </div>
+          </div>
+        </section>
+      </div>
       <h1 class="tui__h-1">Log<sub>2</sub></h1>
       <p class="tui__text-lg">
-        Log<sub>2</sub> is a store dedicated to selling books that fall around
-        computers and related stuff. Check out detailed list of products
-        <a href="/products">(here)</a>.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        is a store dedicated to selling books that fall around computers and
+        related stuff.
       </p>
+      <div class="lg2__categories">
+        <div class="lg2__category tui__m-xl">
+          <div
+            class="tui__badge--ribbon tui__hw--100 tui__pos--rel tui__ribbon--bg-col"
+            data-label="DSA"
+          >
+            <div class="tui__hw--100 tui__pos--rel">
+              <img
+                class="tui__image--center-cover"
+                src="/assets/jpgs/coremen.jpg"
+                alt="display image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="lg2__category tui__m-xl">
+          <div
+            class="tui__badge--ribbon tui__hw--100 tui__pos--rel tui__ribbon--bg-col"
+            data-label="Web Dev"
+          >
+            <div class="tui__hw--100 tui__pos--rel">
+              <img
+                class="tui__image--center-cover"
+                src="/assets/avif/webdev.avif"
+                alt="display image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="lg2__category tui__m-xl">
+          <div
+            class="tui__badge--ribbon tui__hw--100 tui__pos--rel tui__ribbon--bg-col"
+            data-label="AI"
+          >
+            <div class="tui__hw--100 tui__pos--rel">
+              <img
+                class="tui__image--center-cover"
+                src="/assets/avif/ai.avif"
+                alt="display image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="lg2__category tui__m-xl">
+          <div
+            class="tui__badge--ribbon tui__hw--100 tui__pos--rel tui__ribbon--bg-col"
+            data-label="System Design"
+          >
+            <div class="tui__hw--100 tui__pos--rel">
+              <img
+                class="tui__image--center-cover"
+                src="/assets/avif/sd.avif"
+                alt="display image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="lg2__category tui__m-xl">
+          <div
+            class="tui__badge--ribbon tui__hw--100 tui__pos--rel tui__ribbon--bg-col"
+            data-label="Discrete Maths"
+          >
+            <div class="tui__hw--100 tui__pos--rel">
+              <img
+                class="tui__image--center-cover"
+                src="/assets/avif/dm.avif"
+                alt="display image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="lg2__category tui__m-xl">
+          <div
+            class="tui__badge--ribbon tui__hw--100 tui__pos--rel tui__ribbon--bg-col"
+            data-label="DBMS"
+          >
+            <div class="tui__hw--100 tui__pos--rel">
+              <img
+                class="tui__image--center-cover"
+                src="/assets/webps/dbms.webp"
+                alt="display image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="lg2__footer"></footer>
