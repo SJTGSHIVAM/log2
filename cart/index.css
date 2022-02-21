@@ -1,9 +1,29 @@
+.lg2__hr {
+  border-bottom: var(--g-border-width-sm) solid var(--theme-dark);
+  width: 90%;
+  margin: var(--margin-md);
+}
+.lg2__cart--justify {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  margin: var(--margin-md) auto;
+  justify-content: center;
+}
+
+.lg2__card--cart {
+  max-width: 30rem;
+  width: 90%;
+}
+.lg2__card--cart-item {
+  max-width: 40rem;
+  width: 90%;
+}
 @media screen and (min-width: 768px) {
   body {
     display: grid;
     grid-template-areas:
       "nav nav nav nav nav nav nav nav nav nav nav nav"
-      "lside lside . con con con con con con . rside rside"
+      "lside con con con con con con con con con con rside"
       "foot foot foot foot foot foot foot foot foot foot foot foot";
     grid-template-rows: minmax(10vh, max-content) 1fr minmax(10vh, max-content);
   }
@@ -13,11 +33,25 @@
   .lg2__main {
     grid-area: con;
   }
+  .lg2__main--content {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 50% 50%;
+  }
   .lg2__aside--right {
     grid-area: rside;
   }
   .lg2__footer {
     grid-area: foot;
+  }
+  .lg2__card--cart {
+    grid-column: 2;
+    position: sticky;
+    top: 5%;
+  }
+  .lg2__card--cart-item {
+    grid-column: 1;
   }
 }
 /*=====  End of usage layout  ======*/
