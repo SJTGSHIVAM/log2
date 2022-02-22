@@ -23,7 +23,6 @@
   display: grid;
   grid-template-columns: 90%;
   justify-content: space-evenly;
-  aspect-ratio: 1000 / 1;
   row-gap: var(--margin-md);
   column-gap: auto;
 }
@@ -61,7 +60,6 @@
     margin-bottom: 1rem;
   }
   .lg2__footer {
-    z-index: 1;
     grid-area: foot;
   }
 
