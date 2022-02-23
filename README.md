@@ -32,6 +32,7 @@ A few features you get with Log2:
 * Cart management
 * Wishlist management
 * Sign-up
+* Address Management
 * Login
 * Logout
 * Forget Password
@@ -57,6 +58,7 @@ Feel free to send us feedback, Please [file an issue](https://github.com/SJTGSHI
 * [Products](https://log2.netlify.app/products)
 * [Profile](https://log2.netlify.app/profile)
 * [Wishlist](https://log2.netlify.app/wishlist)
+* [Address Management](https://log2.netlify.app/address_management)
 
 ## Upcoming
 
