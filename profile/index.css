@@ -3,6 +3,14 @@
   grid-template-columns: 1fr 1fr;
   margin: auto;
 }
+.lg2__profile--body {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 500px) {
+  .lg2__profile--body {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 768px) {
   body {
     display: grid;
@@ -12,6 +20,7 @@
       "foot foot foot foot foot foot foot foot foot foot foot foot";
     grid-template-rows: minmax(10vh, max-content) 1fr minmax(10vh, max-content);
   }
+
   .lg2__header {
     grid-area: nav;
   }
